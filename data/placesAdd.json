@@ -1,0 +1,52 @@
+[
+    {
+        "mainText": "Sun & Beach",
+        "desc": "Brazil is blessed with an extensive coastline full of sun and beach destinations that attract tourists from all over the world. From north to south, Brazil's beaches offer impressive diversity, from the paradise-like scenery of Fernando de Noronha to the golden dunes of Jericoacoara, as well as the famous Copacabana beach in Rio de Janeiro and the unspoiled beaches of Florianópolis. With crystal-clear waters, white sands and a vibrant atmosphere, Brazil's sun and beach destinations are havens for relaxation, adventure and fun by the ocean.",
+        "textPhotoBig": "Chils",
+        "textPhotoSmall1": "Paradise",
+        "textPhotoSmall2": "Resorts",
+        "urlPhotoSmall1": "../_img/9-13.png",
+        "urlPhotoSmall2": "../_img/cultura-arte.jpg",
+        "urlPhotoBig": "../_img/resort.jpg"
+    },
+    {
+        "mainText": "Culture",
+        "desc": "Brazil is a country rich in cultural diversity, with a wide range of destinations that reflect its varied history, traditions and influences. From the historic streets of cities like Salvador and Ouro Preto, with their baroque churches and colonial architecture, to the vibrant bohemian neighborhoods of Rio de Janeiro and São Paulo, known for their nightlife and street art, the country offers a unique cultural experience on every corner.",
+        "textPhotoBig": "Historical Heritage",
+        "textPhotoSmall1": "Entertainment and Nightlife",
+        "textPhotoSmall2": "Architecture and art",
+        "urlPhotoSmall1": "../_img/cultura-festival.jpg",
+        "urlPhotoSmall2": "../_img/cultura-arte.jpg",
+        "urlPhotoBig": "../_img/cultura-historica.jpg"
+    },
+    {
+        "mainText": "Nature",
+        "desc": "Canada boasts an expansive natural landscape that attracts visitors year-round. From the towering Rocky Mountains in Alberta and British Columbia to the endless prairies and boreal forests stretching through the central provinces, there’s an adventure awaiting at every turn. Experience the majestic beauty of Banff’s turquoise lakes, the northern lights in Yukon, or the rugged coastlines of Newfoundland for a true immersion into Canada's natural wonders.",
+        "textPhotoBig": "Mountainous Landscapes",
+        "textPhotoSmall1": "Lakes and Rivers",
+        "textPhotoSmall2": "Wildlife and Forests",
+        "urlPhotoSmall1": "../_img/aniq-danial-8pQuh5vS-aE-unsplash.jpg",
+        "urlPhotoSmall2": "../_img/yawan-sahu-ibCQ8rLyqaM-unsplash.jpg",
+        "urlPhotoBig": "../_img/pramod-tiwari-NI1XeL-fyLY-unsplash.jpg"
+    },
+    {
+        "mainText": "Gastronomy",
+        "desc": "Japan’s culinary scene is famous for its unique blend of tradition and innovation, with dishes that range from sushi and ramen to modern fusion cuisines. In bustling Tokyo and Osaka, you’ll find everything from high-end Michelin-starred restaurants to bustling street food markets offering diverse flavors. Savor the distinct regional specialties, from Kyoto’s kaiseki to Hiroshima’s okonomiyaki, and experience a culinary journey unlike any other.",
+        "textPhotoBig": "Traditional Dishes",
+        "textPhotoSmall1": "Street Food Culture",
+        "textPhotoSmall2": "Modern Cuisine",
+        "urlPhotoSmall1": "../_img/wesual-click-Hcdx1zVQJ6Y-unsplash.jpg",
+        "urlPhotoSmall2": "../_img/arthur-osipyan-unsplash.jpg",
+        "urlPhotoBig": "../_img/oriento-gy_DN08336U-unsplash.jpg"
+    },
+    {
+        "mainText": "Festivals",
+        "desc": "India is renowned for its vibrant festivals that are celebrated with color, music, and dance across the country. From the exuberant colors of Holi to the dazzling lights of Diwali, each festival offers a unique glimpse into the nation’s rich heritage. Cities like Jaipur, Kolkata, and Goa transform into bustling centers of celebration during these times, drawing visitors to experience the energy and unity that define these cultural events.",
+        "textPhotoBig": "Holi Festival",
+        "textPhotoSmall1": "Diwali Lights",
+        "textPhotoSmall2": "Traditional Music and Dance",
+        "urlPhotoSmall1": "../_img/gwen-weustink-I3C1sSXj1i8-unsplash.jpg",
+        "urlPhotoSmall2": "../_img/matt-thornhill-GpjCysteKvI-unsplash.jpg",
+        "urlPhotoBig": "../_img/logan-weaver-lgnwvr-f8-unsplash.jpg"
+    }
+]

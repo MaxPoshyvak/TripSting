@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/routes.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="top__side">
+                <header>
+                    <div class="logo"><a href="/home">TriPsting</a></div>
+                    <div class="navigation">
+                        <ul>
+                            <li id="routes"><a href="/routes">Routes</a></li>
+                            <li id="popular__place"><a href="/popularPlaces">Popular places</a></li>
+                            <li id="tips"><a href="/tips">Tips</a></li>
+                            <li id="blog"><a href="/blog">Blog</a></li>
+                            <li id="contacts"><a href="/contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="other__buttons">
+                        <div class="login" id="logBtn"></div>
+                        <div class="registration" id="regBtn"></div>
+                        <div class="search" id="search"></div>
+                        <div class="account" id="account"></div>
+                    </div>
+                </header>
+                <nav>
+                    <div class="nav__top">
+                        <div class="top__side-left">
+                            <div class="top__side-main-text animate__fadeIn animate__animated">
+                                Route Finder:<br />
+                                Create or Search Routes
+                            </div>
+                            <div class="top__side-main-describition animate__animated animate__fadeInUp">
+                                The route creation or search tool helps you quickly find or create the best route for
+                                your trip by choosing a convenient option from ready-made suggestions or customising
+                                your own route.
+                            </div>
+                            <button class="top__side-main-button animate__animated animate__fadeInUp" id="mainBtn">
+                                Let's go
+                            </button>
+                        </div>
+                        <div class="top__side-right animate__animated animate__fadeInRight">
+                            <img src="../_img/SupportPlan-675px.webp" alt="" />
+                        </div>
+                    </div>
+                    <div class="nav__bottom">
+                        <p class="popText">Popular places for trips:</p>
+                        <div class="all__Locations animate__fadeIn animate__animated">
+                            <div class="popular__trips">
+                                <div class="popular__trip-head">Euro Trip</div>
+                                <div class="popular__trip-desc">
+                                    Explore the best of Europe with stops in Paris, Rome, and Berlin. A perfect blend of
+                                    history, culture, and cuisine.
+                                </div>
+                            </div>
+                            <div class="popular__trips">
+                                <div class="popular__trip-head">Pacific Coast Highway</div>
+                                <div class="popular__trip-desc">
+                                    Drive along California’s stunning coast, with scenic views from San Francisco to Los
+                                    Angeles. Great for beach lovers and road trip enthusiasts.
+                                </div>
+                            </div>
+                            <div class="popular__trips">
+                                <div class="popular__trip-head">Inca Trail to Machu Picchu</div>
+                                <div class="popular__trip-desc">
+                                    A hiking adventure through the Andes, leading to the ancient ruins of Machu Picchu.
+                                    A historical and breathtaking journey.
+                                </div>
+                            </div>
+                            <div class="popular__trips">
+                                <div class="popular__trip-head">Great Wall of China Trek</div>
+                                <div class="popular__trip-desc">
+                                    Walk along sections of the iconic Great Wall, enjoying panoramic views and deep
+                                    historical significance.
+                                </div>
+                            </div>
+                            <div class="popular__trips">
+                                <div class="popular__trip-head">The Silk Road</div>
+                                <div class="popular__trip-desc">
+                                    Follow this ancient trade route from China to the Mediterranean, rich with cultural
+                                    heritage and diverse landscapes.
+                                </div>
+                            </div>
+                            <div class="popular__trips">
+                                <div class="popular__trip-head">Safari in Serengeti</div>
+                                <div class="popular__trip-desc">
+                                    Experience the wildlife of Africa with a safari through Tanzania's Serengeti
+                                    National Park, known for the Great Migration.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <main id="main"></main>
+                <div class="bottomSide">
+                    <div class="main__bottom-nav">
+                        <div class="bottom__info">
+                            <div class="bottom__logo">TriPsting</div>
+                            <div class="bottom__desc">We make it easy and fun to plan your next adventure.</div>
+                        </div>
+                        <div class="bottom__navigation">
+                            <h2 class="navText">Navigations:</h2>
+                            <p class="navBtns"><a href="/home">Home</a></p>
+                            <p class="navBtns"><a href="/routes">Routes</a></p>
+                            <p class="navBtns"><a href="/PopularPlaces">Popular places</a></p>
+                            <p class="navBtns"><a href="/tips">Tips</a></p>
+                            <p class="navBtns"><a href="/blog">Blog</a></p>
+                            <p class="navBtns"><a href="/contacts">Contact</a></p>
+                        </div>
+                        <div class="bottom__buttons">
+                            <h2>Buttons:</h2>
+                            <button>Start your trip</button>
+                            <button>Contact us</button>
+                        </div>
+                        <div class="bottom__social">
+                            <h2>Social:</h2>
+                            <div class="icons__social">
+                                <i class="fa-brands fa-telegram"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom__company">©️ 2024 TriPsting</div>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/ce0dbffcde.js" crossorigin="anonymous"></script>
+        <script src="../otherJS/route.js"></script>
+        <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+
+        <script>
+            const socket = io('http://localhost:3000');
+            socket.on('sendDataRoutes', (data) => {
+                for (let i = 0; i < data.length; i++) {
+                    const readyScheme = `<div class="select__form-ready-variants">
+                        <div class="ready-left">
+                            <div class="ready__main-text">${data[i].mainText}</div>
+                            <div class="ready__main-desc">${data[i].desc}</div>
+                            <button class="seeALLBtn">See All</button>
+                        </div>
+                        <div class="ready-right">
+                            <div class="photo__left" style="background-image: url(${data[i].urlPhotoBig}), linear-gradient(to top, rgba(0, 0, 0, 0.4980392157), rgba(255, 255, 255, 0.4980392));">
+                                <div class="category">
+                                    <div class="category__text" >${data[i].textPhotoBig}</div>
+                                    <button class="category__button">See more</button>
+                                </div>
+                            </div>
+                            <div class="photo__right">
+                                <div class="top__photo"  style="background-image: url(${data[i].urlPhotoSmall1}), linear-gradient(to top, rgba(0, 0, 0, 0.4980392157), rgba(255, 255, 255, 0.4980392));">
+                                    <div class="category">
+                                        <div class="category__text">${data[i].textPhotoSmall1}</div>
+                                        <button class="category__button">See more</button>
+                                    </div>
+                                </div>
+                                <div class="bottom__photo" style="background-image: url(${data[i].urlPhotoSmall2}), linear-gradient(to top, rgba(0, 0, 0, 0.4980392157), rgba(255, 255, 255, 0.4980392));">
+                                    <div class="category">
+                                        <div class="category__text" >${data[i].textPhotoSmall2}</div>
+                                        <button class="category__button">See more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                    document.getElementById('main').innerHTML += readyScheme;
+                }
+            });
+        </script>
+    </body>
+</html>

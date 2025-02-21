@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrap {
+  background-color: #ffb319;
+  width: 100%;
+  height: 84vh;
+}
+.wrap header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  background-color: #ffb319;
+  transition: 0.4s;
+}
+.wrap header .logo {
+  width: 80px;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.wrap header .logo a {
+  text-decoration: none;
+  color: black;
+}
+.wrap header .navigation ul {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 2.4rem;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.wrap header .navigation ul li a {
+  text-decoration: none;
+  color: black;
+}
+.wrap nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 76%;
+  font-family: "Poppins", sans-serif;
+  gap: 50px;
+}
+.wrap nav .leftSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 210px;
+}
+.wrap nav .leftSide .nav__main-text {
+  text-align: center;
+  color: #0f0f0f;
+  font-size: 86px;
+  font-weight: 550;
+}
+.wrap nav .leftSide .nav__desc {
+  width: 650px;
+  color: #634813;
+  font-size: 19px;
+  text-align: center;
+}
+.wrap nav .leftSide .toSendMassage {
+  padding: 16px 32px;
+  border: 2px solid black;
+  color: white;
+  background-color: #0f0f0f;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.2s;
+  font-size: 14px;
+  width: 170px;
+  cursor: pointer;
+}
+.wrap nav .leftSide .toSendMassage:hover {
+  background-color: transparent;
+  color: black;
+}
+.wrap nav .rigthSide {
+  margin-top: 210px;
+}/*# sourceMappingURL=blog.css.map */

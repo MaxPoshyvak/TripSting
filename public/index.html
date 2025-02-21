@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://code.jquery.com/jquery-3.6.3.js"
+            integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+            crossorigin="anonymous"
+            defer></script>
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <title>Site</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="top__side">
+                <header class="header">
+                    <div class="logo"><a href="/home">TriPsting</a></div>
+                    <div class="navigation">
+                        <ul>
+                            <li id="routes"><a href="/routes">Routes</a></li>
+                            <li id="popular__place"><a href="/popularPlaces">Popular places</a></li>
+                            <li id="tips"><a href="/tips">Tips</a></li>
+                            <li id="blog"><a href="/blog">Blog</a></li>
+                            <li id="contacts"><a href="/contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="other__buttons">
+                        <div class="login" id="logBtn"></div>
+                        <div class="registration" id="regBtn"></div>
+                        <div class="search" id="search"></div>
+                        <div class="account" id="account"></div>
+                    </div>
+                </header>
+                <nav>
+                    <div class="photo__mag photo animate__animated animate__fadeInLeft">
+                        <img src="/_img/magician.png" alt="magician" />
+                    </div>
+                    <div class="central__information">
+                        <h1 class="main__text animate__fadeIn animate__animated">
+                            <div class="topSideOfMainText">
+                                <div>Your</div>
+                                <div class="key"></div>
+                                <div>to</div>
+                            </div>
+                            <div>unforgettable travel</div>
+                        </h1>
+                        <div class="description">
+                            <!-- We make it easy and fun to plan your next adventure. Create itineraries, find hidden gems
+                            and manage your budget in one place. -->
+                        </div>
+                        <div class="starting__btns">
+                            <div class="start__trip">Start your trip</div>
+                            <div class="contact__us">Contact us</div>
+                        </div>
+                    </div>
+                    <div class="photo__lock photo animate__animated animate__fadeInRight">
+                        <img src="/_img/lock.png" alt="lock" />
+                    </div>
+                </nav>
+                <div class="company">
+                    <p class="ourTeam">We work with these companies:</p>
+                    <div class="all_companys animate__animated animate__fadeIn">
+                        <img src="./_img/cpmpany/AQPM-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/CAIJ-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/CPQ-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/Hydro-Québec-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/Nationex-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/Sanivac-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/SPCA-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/Ville-de-Candiac-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/GTI-Canada-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/Cléo-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/OSM-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/Leucan-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/CSS-Grandes-Seigneuries-Logo.png" alt="" />
+                        <img src="./_img/cpmpany/AQPM-Logo.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="centeralSide">
+                <div class="choise">
+                    <div class="choise__content">
+                        <div class="sub__choiseText">Your traveling choise</div>
+                        <div class="main__choiseText">
+                            Explore the world in <br />
+                            your own way
+                        </div>
+                        <div class="descrebition__choiseText">
+                            Choose the most convenient way to travel: by car, plane or train. Plan your routes, stops,
+                            <br />
+                            and travel duration to make your journey as comfortable as possible.
+                        </div>
+                        <div class="three__choise">
+                            <div class="choise__byTransport">
+                                <div class="lineForChoise"></div>
+                                <div class="choiseTextContent">
+                                    <div class="choise__logo"><i class="fa-solid fa-car"></i></div>
+                                    <div class="choise__text">
+                                        <div class="choise__textHead">Travelling by car</div>
+                                        <div class="choise__mainText">
+                                            Enjoy the freedom and convenience of choosing your own direction and pace.
+                                            Suitable for explorers who value flexibility in their itineraries and want
+                                            to see more of the sights along the way.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="choise__byTransport">
+                                <div class="lineForChoise"></div>
+                                <div class="choiseTextContent">
+                                    <div class="choise__logo"><i class="fa-solid fa-plane"></i></div>
+                                    <div class="choise__text">
+                                        <div class="choise__textHead">Flying by plane</div>
+                                        <div class="choise__mainText">
+                                            The perfect choice for long-distance travel. Save time and get to your dream
+                                            destinations quickly, comfortably and without hassle.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="choise__byTransport">
+                                <div class="lineForChoise"></div>
+                                <div class="choiseTextContent">
+                                    <div class="choise__logo"><i class="fa-solid fa-train"></i></div>
+                                    <div class="choise__text">
+                                        <div class="choise__textHead">Travelling by train</div>
+                                        <div class="choise__mainText">
+                                            Comfort and tranquillity for those who want to watch the scenery and relax
+                                            on the road. A convenient choice for travelling between cities and
+                                            countries.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choise__content" style="margin-top: 200px">
+                        <div class="sub__choiseText">Our travel consultants</div>
+                        <div class="main__choiseText">For those who find <br />it difficult to come out</div>
+                        <div class="consultants">
+                            <div class="consult__photo">
+                                <img src="./_img/Square-Asset-Custom-Implementation.webp" alt="" />
+                            </div>
+                            <div class="consultant__info">
+                                <div class="consultant__theme">Craft your ideal solution</div>
+                                <div class="consultant__work">Travel consultants</div>
+                                <div class="consultant__desc">
+                                    Travel consultants help clients choose the best travel options: they plan
+                                    itineraries, select hotels and transport, and take into account budget and
+                                    preferences. They also provide information on visas, security and destination
+                                    specifics.
+                                </div>
+                                <button class="writeUs">Write to us</button>
+                            </div>
+                        </div>
+                        <div class="consultants" style="margin-top: 100px">
+                            <div class="consultant__info">
+                                <div class="consultant__theme">Support without weekend</div>
+                                <div class="consultant__work">Support services</div>
+                                <div class="consultant__desc" style="margin-bottom: 20px">
+                                    Customer service is the team that helps customers with questions about a company's
+                                    products or services. They answer queries, provide technical assistance, and help
+                                    resolve problems to ensure that users have a positive experience.
+                                </div>
+                                <div class="support__plans">
+                                    <div class="text__for-support">Support Plan</div>
+                                    <div class="lineSupport"></div>
+                                    <div class="text__for-support">Optimization</div>
+                                    <div class="lineSupport"></div>
+                                    <div class="text__for-support">Training</div>
+                                    <div class="lineSupport"></div>
+                                    <div class="text__for-support">Pay-per-session workshops</div>
+                                    <div class="lineSupport"></div>
+                                </div>
+                                <button style="margin-top: 30px" class="writeUs">Write to us</button>
+                            </div>
+                            <div class="consult__photo">
+                                <img src="./_img/Square-Asset-Support-Services.webp" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomSide">
+                <div class="main__bottom-nav">
+                    <div class="bottom__info">
+                        <div class="bottom__logo">TriPsting</div>
+                        <div class="bottom__desc">We make it easy and fun to plan your next adventure.</div>
+                    </div>
+                    <div class="bottom__navigation">
+                        <h2 class="navText">Navigations:</h2>
+                        <p class="navBtns"><a href="/home">Home</a></p>
+                        <p class="navBtns"><a href="/routes">Routes</a></p>
+                        <p class="navBtns"><a href="/PopularPlaces">Popular places</a></p>
+                        <p class="navBtns"><a href="/tips">Tips</a></p>
+                        <p class="navBtns"><a href="/blog">Blog</a></p>
+                        <p class="navBtns"><a href="/contacts">Contact</a></p>
+                    </div>
+                    <div class="bottom__buttons">
+                        <h2>Buttons:</h2>
+                        <button>Start your trip</button>
+                        <button>Contact us</button>
+                    </div>
+                    <div class="bottom__social">
+                        <h2>Social:</h2>
+                        <div class="icons__social">
+                            <i class="fa-brands fa-telegram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom__company">©️ 2024 TriPsting</div>
+            </div>
+        </div>
+        <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+
+        <script>
+            const descriptionElements = document.getElementsByClassName('description');
+            //Sockets
+            const socket = io('http://localhost:3000');
+            socket.on('getInfoForFront', (data) => {
+                descriptionElements[0].innerText = data;
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/ce0dbffcde.js" crossorigin="anonymous"></script>
+        <script src="./otherJS/home.js"></script>
+    </body>
+</html>

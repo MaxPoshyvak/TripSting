@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="../css/contacts.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="top__side">
+                <header>
+                    <div class="logo"><a href="/home">TriPsting</a></div>
+                    <div class="navigation">
+                        <ul>
+                            <li id="routes"><a href="/routes">Routes</a></li>
+                            <li id="popular__place"><a href="/popularPlaces">Popular places</a></li>
+                            <li id="tips"><a href="/tips">Tips</a></li>
+                            <li id="blog"><a href="/blog">Blog</a></li>
+                            <li id="contacts"><a href="/contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="other__buttons">
+                        <div class="login" id="logBtn"></div>
+                        <div class="registration" id="regBtn"></div>
+                        <div class="search" id="search"></div>
+                        <div class="account" id="account"></div>
+                    </div>
+                </header>
+                <nav>
+                    <div class="leftSide">
+                        <div class="nav__main-text animate__fadeIn animate__animated">
+                            Contact, support <br />
+                            & report
+                        </div>
+                        <div class="nav__desc animate__animated animate__fadeInUp">
+                            On the Contact Us page, you can contact us with questions or suggestions. Leave your message
+                            in the feedback form or use our email or phone number. We will respond to you as soon as
+                            possible!
+                        </div>
+                        <button id="toSendMassage" class="toSendMassage animate__animated animate__fadeInUp">
+                            Contact me
+                        </button>
+                    </div>
+                    <div class="rigthSide animate__animated animate__fadeInRight">
+                        <img src="../_img/Migration-675px.webp" alt="" />
+                    </div>
+                </nav>
+            </div>
+            <div class="centeralSide">
+                <form id="formToGmail" class="formToGmail">
+                    <div class="main__information">
+                        <div class="leftFormSide">
+                            <label for="firstName">First name:</label>
+                            <input type="text" name="firstName" id="firstName" />
+                            <label for="region">Region:</label>
+                            <select name="region" id="region">
+                                <option value="usa">USA</option>
+                                <option value="ukraine">Ukraine</option>
+                                <option value="canada">Canada</option>
+                                <option value="asia">Asia</option>
+                                <option value="africa">Africa</option>
+                                <option value="europe">Europe</option>
+                            </select>
+                        </div>
+                        <div class="rightFormSide">
+                            <label for="lastName">Last name:</label>
+                            <input type="text" name="lastName" id="lastName" />
+                            <label for="phone">Phone:</label>
+                            <input type="text" name="phone" id="phone" />
+                        </div>
+                    </div>
+                    <div class="theme">
+                        <h3>Subject of the appeal:</h3>
+
+                        <div>
+                            <input type="checkbox" name="report" id="report" />
+                            <label for="report">Report</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="recommendation" id="recommendation" />
+                            <label for="recommendation">Recommendation</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="disadvantage" id="disadvantage" />
+                            <label for="disadvantage">Disadvantage</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="support" id="support" />
+                            <label for="support">Support</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h3>Your question or complaint.</h3>
+                        <textarea name="" id="textQuestion" placeholder="Your massage here: "></textarea>
+                    </div>
+                    <div class="sbnDiv">
+                        <button id="submit" type="submit" class="submitFormBtn">Submit</button>
+                    </div>
+                </form>
+                <div class="OR">
+                    <div class="lineOR"></div>
+                    <div class="textOR">OR</div>
+                    <div class="lineOR"></div>
+                </div>
+                <div class="telegramButton">
+                    <a target="_blank" href="https://t.me/tripsting_support_bot" class="telegaLink"
+                        ><i class="fa-brands fa-telegram"></i>Support bot</a
+                    >
+                </div>
+            </div>
+            <div class="bottomSide">
+                <div class="main__bottom-nav">
+                    <div class="bottom__info">
+                        <div class="bottom__logo">TriPsting</div>
+                        <div class="bottom__desc">We make it easy and fun to plan your next adventure.</div>
+                    </div>
+                    <div class="bottom__navigation">
+                        <h2 class="navText">Navigations:</h2>
+                        <p class="navBtns"><a href="/home">Home</a></p>
+                        <p class="navBtns"><a href="/routes">Routes</a></p>
+                        <p class="navBtns"><a href="/PopularPlaces">Popular places</a></p>
+                        <p class="navBtns"><a href="/tips">Tips</a></p>
+                        <p class="navBtns"><a href="/blog">Blog</a></p>
+                        <p class="navBtns"><a href="/contacts">Contact</a></p>
+                    </div>
+                    <div class="bottom__buttons">
+                        <h2>Buttons:</h2>
+                        <button>Start your trip</button>
+                        <button>Contact us</button>
+                    </div>
+                    <div class="bottom__social">
+                        <h2>Social:</h2>
+                        <div class="icons__social">
+                            <i class="fa-brands fa-telegram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom__company">©️ 2024 TriPsting</div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/ce0dbffcde.js" crossorigin="anonymous"></script>
+        <script src="../otherJS/contacts.js"></script>
+        <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+        <script>
+            const socket = io('http://localhost:3000');
+            let firstName = document.getElementById('firstName');
+            let lastName = document.getElementById('lastName');
+            let phone = document.getElementById('phone');
+            let textQuestion = document.getElementById('textQuestion');
+            document.getElementById('submit').addEventListener('click', (e) => {
+                e.preventDefault();
+                if (firstName.value == '' || lastName.value == '' || phone.value == '' || textQuestion.value == '') {
+                    if (firstName.value == '') {
+                        firstName.style.border = '1px solid red';
+                    }
+                    if (lastName.value == '') {
+                        lastName.style.border = '1px solid red';
+                    }
+                    if (phone.value == '') {
+                        phone.style.border = '1px solid red';
+                    }
+                    if (textQuestion.value == '') {
+                        textQuestion.style.border = '1px solid red';
+                    }
+
+                    setTimeout(() => {
+                        firstName.style.border = '1px solid #b3ada8';
+                        lastName.style.border = '1px solid #b3ada8';
+                        phone.style.border = '1px solid #b3ada8';
+                        textQuestion.style.border = '1px solid #b3ada8';
+                    }, 500);
+                } else {
+                    socket.emit('isSubmit', [firstName.value, lastName.value, phone.value, textQuestion.value]);
+                    firstName.value = '';
+                    lastName.value = '';
+                    phone.value = '';
+                    textQuestion.value = '';
+                }
+            });
+        </script>
+    </body>
+</html>
