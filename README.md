@@ -1,7 +1,7 @@
 # TripSting 🚀
 
 
-## ℹ️ Descreption
+## ℹ️ Description
 We make it easy and fun to plan your next adventure. Create itineraries, find hidden gems and manage your budget in one place.
 Start your trip
 
