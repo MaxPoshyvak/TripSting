@@ -102,7 +102,12 @@
 }
 .top__side nav .central__information .starting__btns .start__trip:hover {
   background-color: transparent;
+}
+.top__side nav .central__information .starting__btns .start__trip:hover a {
   color: black;
+}
+.top__side nav .central__information .starting__btns .start__trip a {
+  color: white;
 }
 .top__side nav .central__information .contact__us {
   padding: 16px 32px;
@@ -276,6 +281,12 @@
 .consultants .consultant__info .writeUs:hover {
   background-color: transparent;
   color: black;
+}
+.consultants .consultant__info .writeUs:hover a {
+  color: black;
+}
+.consultants .consultant__info .writeUs a {
+  color: white;
 }
 
 .support__plans {

@@ -100,4 +100,108 @@ html {
             margin-top: 210px;
         }
     }
+    .centeralSide {
+        width: 100%;
+        height: 110vh;
+        margin-top: 15%;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+        ul {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+    }
+    .bottomSide {
+        background-color: #ffb319;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-family: 'Poppins', sans-serif;
+
+        .main__bottom-nav {
+            display: flex;
+            gap: 300px;
+            .bottom__info {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .bottom__logo {
+                    width: 80px;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+                .bottom__desc {
+                    width: 170px;
+                    color: #423315;
+                    font-size: 15px;
+                }
+            }
+            .bottom__navigation {
+                color: black;
+                .navBtns {
+                    a {
+                        transition: 0.3s;
+                        color: black;
+                        cursor: pointer;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .bottom__buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                button {
+                    padding: 16px 32px;
+                    border: none;
+                    color: black;
+                    border-radius: 30px;
+                    font-weight: 500;
+                    transition: 0.2s;
+                    font-size: 14px;
+                    background-color: #ffb319;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                }
+            }
+            .bottom__social {
+                .icons__social {
+                    display: flex;
+                    gap: 20px;
+                    margin-top: 20px;
+                    i {
+                        font-size: 30px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .bottom__company::first-letter {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
 }
